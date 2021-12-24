@@ -1,0 +1,23 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Wed Sep  1 02:29:46 2021
+# Process ID: 4840
+# Current directory: E:/LB YCPF2/proj/project_1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent3632 E:\LB YCPF2\proj\project_1\project_1.xpr
+# Log file: E:/LB YCPF2/proj/project_1/vivado.log
+# Journal file: E:/LB YCPF2/proj/project_1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {E:/LB YCPF2/proj/project_1/project_1.xpr}
+WARNING: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'E:/LB YCPF2/proj/project_1/project_1.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Xilinx/Vivado/2020.2/data/ip'.
+INFO: [IP_Flow 19-2338] Canceling the changes to the IP catalog. Reverting the catalog back to its previous state.
+INFO: [IP_Flow 19-2340] The IP catalog has been returned to its previous state.
+INFO: [Common 17-344] 'open_project' was cancelled

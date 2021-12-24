@@ -1,0 +1,216 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Sun Sep  5 13:15:32 2021
+# Process ID: 8936
+# Current directory: E:/LB YCPF2/proj/project_1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7628 E:\LB YCPF2\proj\project_1\project_1.xpr
+# Log file: E:/LB YCPF2/proj/project_1/vivado.log
+# Journal file: E:/LB YCPF2/proj/project_1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {E:/LB YCPF2/proj/project_1/project_1.xpr}
+WARNING: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'E:/LB YCPF2/proj/project_1/project_1.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Xilinx/Vivado/2020.2/data/ip'.
+open_project: Time (s): cpu = 00:00:16 ; elapsed = 00:00:08 . Memory (MB): peak = 1006.855 ; gain = 0.000
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+[Sun Sep  5 13:16:45 2021] Launched synth_1...
+Run output will be captured here: E:/LB YCPF2/proj/project_1/project_1.runs/synth_1/runme.log
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/LB YCPF2/proj/project_1/project_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'projTollSystem' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/LB YCPF2/proj/project_1/project_1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj projTollSystem_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/LB YCPF2/proj/project_1/project_1.sim/sim_1/behav/xsim'
+"xelab -wto 5eda5405a0b74ecbbc7b1595ed4ea76c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot projTollSystem_behav xil_defaultlib.projTollSystem xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: E:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 5eda5405a0b74ecbbc7b1595ed4ea76c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot projTollSystem_behav xil_defaultlib.projTollSystem xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/LB YCPF2/proj/project_1/project_1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "projTollSystem_behav -key {Behavioral:sim_1:Functional:projTollSystem} -tclbatch {projTollSystem.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+source projTollSystem.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'projTollSystem_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:10 ; elapsed = 00:00:09 . Memory (MB): peak = 1006.855 ; gain = 0.000
+add_force {/projTollSystem/class} -radix bin {0 0ns}
+add_force {/projTollSystem/clk} -radix hex {0 0ns} {1 2500000000000ps} -repeat_every 5000000000000ps
+add_force {/projTollSystem/loc} -radix bin {0 0ns}
+add_force {/projTollSystem/class} -radix hex {0 0ns}
+add_force {/projTollSystem/loc} -radix bin {0 0ns}
+add_force {/projTollSystem/load} -radix hex {0c7 0ns} {001 1250000ps} -repeat_every 2500000ps
+add_force {/projTollSystem/clk} -radix hex {0 0ns} {1 2500000ps} -repeat_every 5000000ps
+run 10 us
+add_force {/projTollSystem/load} -radix hex {0c7 0ns} {001 2500000ps} -repeat_every 5000000ps
+run 10 us
+add_force {/projTollSystem/load} -radix hex {0c7 0ns} {001 5000000ps} -repeat_every 10000000ps
+run 10 us
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/LB YCPF2/proj/project_1/project_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'projTollSystem' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/LB YCPF2/proj/project_1/project_1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj projTollSystem_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/LB YCPF2/proj/project_1/project_1.sim/sim_1/behav/xsim'
+"xelab -wto 5eda5405a0b74ecbbc7b1595ed4ea76c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot projTollSystem_behav xil_defaultlib.projTollSystem xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: E:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 5eda5405a0b74ecbbc7b1595ed4ea76c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot projTollSystem_behav xil_defaultlib.projTollSystem xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/LB YCPF2/proj/project_1/project_1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "projTollSystem_behav -key {Behavioral:sim_1:Functional:projTollSystem} -tclbatch {projTollSystem.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+source projTollSystem.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'projTollSystem_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 1175.828 ; gain = 0.000
+add_force {/projTollSystem/clk} -radix hex {0 0ns} {1 2500000ps} -repeat_every 5000000ps
+add_force {/projTollSystem/class} -radix hex {0 0ns}
+add_force {/projTollSystem/loc} -radix hex {0 0ns}
+add_force {/projTollSystem/load} -radix hex {0c7 0ns} {01 5000000ps} -repeat_every 10000000ps
+run 10 us
+add_force {/projTollSystem/loc} -radix bin {1 0ns}
+add_force {/projTollSystem/load} -radix hex {099 0ns} {001 5000000ps} -repeat_every 10000000ps
+run 10 us
+add_force {/projTollSystem/loc} -radix hex {2 0ns}
+add_force {/projTollSystem/load} -radix hex {099 0ns} {001 5000000ps} -repeat_every 10000000ps
+run 10 us
+add_force {/projTollSystem/loc} -radix hex {3 0ns}
+add_force {/projTollSystem/load} -radix hex {068 0ns} {045 5000000ps} -repeat_every 10000000ps
+run 10 us
+add_force {/projTollSystem/loc} -radix hex {4 0ns}
+add_force {/projTollSystem/load} -radix hex {045 0ns} {001 5000000ps} -repeat_every 10000000ps
+run 10 us
+add_force {/projTollSystem/loc} -radix hex {5 0ns}
+add_force {/projTollSystem/load} -radix hex {1aa 0ns}
+add_force {/projTollSystem/clk} -radix hex {0 0ns} {1 5000000ps} -repeat_every 10000000ps
+run 10 us
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/LB YCPF2/proj/project_1/project_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'projTollSystem' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/LB YCPF2/proj/project_1/project_1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj projTollSystem_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/LB YCPF2/proj/project_1/project_1.sim/sim_1/behav/xsim'
+"xelab -wto 5eda5405a0b74ecbbc7b1595ed4ea76c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot projTollSystem_behav xil_defaultlib.projTollSystem xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: E:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 5eda5405a0b74ecbbc7b1595ed4ea76c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot projTollSystem_behav xil_defaultlib.projTollSystem xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/LB YCPF2/proj/project_1/project_1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "projTollSystem_behav -key {Behavioral:sim_1:Functional:projTollSystem} -tclbatch {projTollSystem.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+source projTollSystem.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'projTollSystem_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 1175.828 ; gain = 0.000
+add_force {/projTollSystem/clk} -radix hex {0 0ns} {1 2500000ps} -repeat_every 5000000ps
+add_force {/projTollSystem/class} -radix hex {0 0ns}
+add_force {/projTollSystem/loc} -radix hex {0 0ns}
+add_force {/projTollSystem/load} -radix hex {18E 0ns} {256 5000000ps} -repeat_every 10000000ps
+run 10 us
+add_force {/projTollSystem/loc} -radix hex {1 0ns}
+add_force {/projTollSystem/load} -radix hex {160 0ns} {228 5000000ps} -repeat_every 10000000ps
+run 10 us
+add_force {/projTollSystem/loc} -radix hex {2 0ns}
+run 10 us
+add_force {/projTollSystem/loc} -radix hex {3 0ns}
+add_force {/projTollSystem/load} -radix hex {12F 0ns} {503 5000000ps} -repeat_every 10000000ps
+ERROR: [Simtcl 6-179] Couldn't add force for the following reason: Illegal value '503': Object size 10 does not match size of given value 503.
+add_force {/projTollSystem/load} -radix hex {12F 0ns} {1F7 5000000ps} -repeat_every 10000000ps
+run 10 us
+add_force {/projTollSystem/loc} -radix hex {4 0ns}
+add_force {/projTollSystem/load} -radix hex {10C 0ns} {1D4 5000000ps} -repeat_every 10000000ps
+run 10 us
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun Sep  5 14:45:02 2021...

@@ -1,0 +1,166 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Sun Sep  5 20:04:58 2021
+# Process ID: 8852
+# Current directory: E:/LB YCPF2/proj/project_1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9908 E:\LB YCPF2\proj\project_1\project_1.xpr
+# Log file: E:/LB YCPF2/proj/project_1/vivado.log
+# Journal file: E:/LB YCPF2/proj/project_1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {E:/LB YCPF2/proj/project_1/project_1.xpr}
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+launch_simulation
+source projTollSystem.tcl
+add_force {/projTollSystem/class} -radix hex {0 0ns}
+add_force {/projTollSystem/loc} -radix hex {0 0ns}
+add_force {/projTollSystem/load} -radix hex {0c7 0ns} {001 5000000ps} -repeat_every 10000000ps
+run 10 us
+add_force {/projTollSystem/loc} -radix hex {1 0ns}
+add_force {/projTollSystem/load} -radix hex {099 0ns} {001 5000000ps} -repeat_every 10000000ps
+run 10 us
+add_force {/projTollSystem/loc} -radix hex {2 0ns}
+add_force {/projTollSystem/load} -radix hex {099 0ns} {001 5000000ps} -repeat_every 10000000ps
+run 10 us
+add_force {/projTollSystem/loc} -radix hex {3 0ns}
+add_force {/projTollSystem/load} -radix hex {068 0ns} {001 5000000ps} -repeat_every 10000000ps
+run 10 us
+add_force {/projTollSystem/loc} -radix hex {4 0ns}
+add_force {/projTollSystem/load} -radix hex {045 0ns} {001 5000000ps} -repeat_every 10000000ps
+run 10 us
+add_force {/projTollSystem/loc} -radix hex {5 0ns}
+add_force {/projTollSystem/load} -radix hex {1aa 0ns}
+run 10 us
+close_sim
+launch_simulation
+source projTollSystem.tcl
+add_force {/projTollSystem/class} -radix hex {0 0ns}
+add_force {/projTollSystem/loc} -radix hex {0 0ns}
+add_force {/projTollSystem/load} -radix hex {0c7 0ns}
+run 10 us
+close_sim
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+launch_simulation
+source projTollSystem.tcl
+add_force {/projTollSystem/clk} -radix hex {0 0ns} {1 2500000ps} -repeat_every 5000000ps
+add_force {/projTollSystem/load} -radix hex {0c7 0ns} {001 5000000ps} -repeat_every 10000000ps
+add_force {/projTollSystem/class} -radix hex {0 0ns}
+add_force {/projTollSystem/loc} -radix hex {0 0ns}
+run 10 us
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+close_sim
+launch_simulation
+source projTollSystem.tcl
+add_force {/projTollSystem/clk} -radix hex {0 0ns} {1 2500000ps} -repeat_every 5000000ps
+add_force {/projTollSystem/class} -radix hex {0 0ns}
+add_force {/projTollSystem/loc} -radix hex {0 0ns}
+add_force {/projTollSystem/load} -radix hex {0c7 0ns} {001 5000000ps} -repeat_every 10000000ps
+run 10 us
+close_sim
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+launch_simulation
+source projTollSystem.tcl
+add_force {/projTollSystem/clk} -radix hex {0 0ns} {1 2500000ps} -repeat_every 5000000ps
+add_force {/projTollSystem/class} -radix hex {0 0ns}
+add_force {/projTollSystem/loc} -radix hex {0 0ns}
+add_force {/projTollSystem/load} -radix hex {0c7 0ns} {001 5000000ps} -repeat_every 10000000ps
+run 10 us
+close_sim
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+launch_simulation
+source projTollSystem.tcl
+add_force {/projTollSystem/clk} -radix hex {0 0ns} {1 2500000ps} -repeat_every 5000000ps
+add_force {/projTollSystem/class} -radix hex {0 0ns}
+add_force {/projTollSystem/loc} -radix hex {0 0ns}
+add_force {/projTollSystem/load} -radix hex {0c7 0ns} {001 5000000ps} -repeat_every 10000000ps
+run 10 us
+close_sim
+launch_simulation
+source projTollSystem.tcl
+add_force {/projTollSystem/clk} -radix hex {0 0ns} {1 2500000ps} -repeat_every 5000000ps
+add_force {/projTollSystem/class} -radix hex {0 0ns}
+add_force {/projTollSystem/loc} -radix hex {0 0ns}
+add_force {/projTollSystem/load} -radix hex {0c7 0ns} {001 5000000ps} -repeat_every 10000000ps
+run 10 us
+close_sim
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+launch_simulation
+source projTollSystem.tcl
+add_force {/projTollSystem/class} -radix hex {0 0ns}
+add_force {/projTollSystem/loc} -radix hex {0 0ns}
+add_force {/projTollSystem/load} -radix hex {0c7 0ns} {001 5000000ps} -repeat_every 10000000ps
+run 10 us
+add_force {/projTollSystem/loc} -radix hex {1 0ns}
+add_force {/projTollSystem/load} -radix hex {099 0ns} {001 5000000ps} -repeat_every 10000000ps
+run 10 us
+add_force {/projTollSystem/loc} -radix hex {2 0ns}
+run 10 us
+add_force {/projTollSystem/loc} -radix hex {3 0ns}
+add_force {/projTollSystem/load} -radix hex {068 0ns} {001 5000000ps} -repeat_every 10000000ps
+run 10 us
+add_force {/projTollSystem/loc} -radix hex {4 0ns}
+add_force {/projTollSystem/load} -radix hex {045 0ns} {001 5000000ps} -repeat_every 10000000ps
+run 10 us
+add_force {/projTollSystem/loc} -radix hex {5 0ns}
+add_force {/projTollSystem/load} -radix hex {1aa 0ns}
+run 10 us
+close_sim
+launch_simulation
+source projTollSystem.tcl
+add_force {/projTollSystem/class} -radix hex {0 0ns}
+add_force {/projTollSystem/loc} -radix hex {0 0ns}
+add_force {/projTollSystem/load} -radix hex {18E 0ns} {256 5000000ps} -repeat_every 10000000ps
+run 10 us
+add_force {/projTollSystem/loc} -radix hex {1 0ns}
+add_force {/projTollSystem/load} -radix hex {160 0ns} {228 5000000ps} -repeat_every 10000000ps
+run 10 us
+add_force {/projTollSystem/loc} -radix hex {2 0ns}
+run 10 us
+add_force {/projTollSystem/load} -radix hex {12F 0ns} {1F7 5000000ps} -repeat_every 10000000ps
+run 10 us
+add_force {/projTollSystem/load} -radix hex {10C 0ns} {1D4 5000000ps} -repeat_every 10000000ps
+run 10 us
+close_sim
+launch_simulation
+source projTollSystem.tcl
+add_force {/projTollSystem/class} -radix hex {0 0ns}
+add_force {/projTollSystem/loc} -radix hex {0 0ns}
+add_force {/projTollSystem/load} -radix hex {18e 0ns} {256 5000000ps} -repeat_every 10000000ps
+run 10 us
+add_force {/projTollSystem/loc} -radix hex {1 0ns}
+add_force {/projTollSystem/load} -radix hex {160 0ns} {228 5000000ps} -repeat_every 10000000ps
+run 10 us
+add_force {/projTollSystem/loc} -radix hex {2 0ns}
+run 10 us
+add_force {/projTollSystem/loc} -radix hex {3 0ns}
+add_force {/projTollSystem/load} -radix hex {12f 0ns} {1f7 5000000ps} -repeat_every 10000000ps
+run 10 us
+add_force {/projTollSystem/loc} -radix hex {4 0ns}
+add_force {/projTollSystem/load} -radix hex {10c 0ns} {1d4 5000000ps} -repeat_every 10000000ps
+run 10 us
+open_run synth_1 -name synth_1
+close_sim
