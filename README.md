@@ -104,7 +104,7 @@ the project made use of Verilog’s arithmetic operators and relational operator
 has its practical, evident, real-world applications in designing circuit systems, and is further proved 
 by the usage of the language in this project.
 
-### Authors
+## Authors
 
 #### Arciella Brience C. Crisostomo [arciella_brience_crisostomo@dlsu.edu.ph]
 
