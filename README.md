@@ -1,5 +1,5 @@
 # Simplified-SLEX-Southwoods-Toll-Matrix-System
-Introduction to HDL Laboratory (LBYCPF2) course using the VHDL programming language in the Vivado software.
+Introduction to HDL Laboratory (LBYCPF2) course using the Verilog programming language in the Vivado software.
 
 ## Introduction
 The South Luzon Expressway, formally known as SLEX, is one of the most widely used 
